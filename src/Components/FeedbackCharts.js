@@ -113,16 +113,17 @@ const styles = {
     chartWrapper: {
         display: 'flex',
         justifyContent: 'space-between',
-        gap: '30px',
+        gap: '20px',
         width: '100%',
         flexWrap: 'wrap',
     },
     chartContainer: {
-        width: '48%', // Adjust the width to ensure both columns have the same size
+        flex: '1 1 calc(50% - 20px)', // Take 50% width with a small gap
         padding: '20px',
         backgroundColor: '#fff',
         borderRadius: '10px',
         boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+        maxWidth: '100%', // Ensure charts don’t exceed their container
     },
     chartTitle: {
         fontSize: '20px',
