@@ -1,0 +1,177 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Main Container */
+.app-container {
+  width: 100%;
+  /* max-width: 800px; */
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title */
+.app-title {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Feedback Form */
+.feedback-form {
+  margin-bottom: 30px;
+}
+
+.form-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Feedback Reports */
+.reports-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.reports-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.reports-list {
+  list-style: none;
+  padding: 0;
+}
+
+.report-item {
+  font-size: 18px;
+  color: #555;
+  margin: 10px 0;
+  padding: 12px;
+  background-color: #e9f3ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  .app-title {
+    font-size: 28px;
+  }
+
+  .form-title {
+    font-size: 20px;
+  }
+
+  .input-field {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+  }
+
+  .reports-title {
+    font-size: 20px;
+  }
+
+  .report-item {
+    font-size: 16px;
+  }
+}
+/* App.css */
+
+.reports-container {
+  margin-top: 20px;
+}
+
+.reports-title {
+  font-size: 1.8em;
+  color: #333;
+}
+
+.reports-section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 1.5em;
+  color: #4caf50; /* Green for Positive Feedback */
+  margin-bottom: 10px;
+}
+
+.reports-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.report-item {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.reports-section:nth-child(2) .section-title {
+  color: #ffa500; /* Orange for Neutral Feedback */
+}
+
+.reports-section:nth-child(3) .section-title {
+  color: #f44336; /* Red for Negative Feedback */
+}
