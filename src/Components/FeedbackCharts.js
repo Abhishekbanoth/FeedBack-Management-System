@@ -61,14 +61,16 @@ const FeedbackCharts = () => {
         <div style={styles.container}>
             <h2 style={styles.title}>Feedback Reports Visualized</h2>
 
-            <div style={styles.chartContainer}>
-                <h3 style={styles.chartTitle}>Sentiment Distribution (Pie Chart)</h3>
-                <Pie data={sentimentData} />
-            </div>
+            <div style={styles.chartWrapper}>
+                <div style={styles.chartContainer}>
+                    <h3 style={styles.chartTitle}>Sentiment Distribution (Pie Chart)</h3>
+                    <Pie data={sentimentData} />
+                </div>
 
-            <div style={styles.chartContainer}>
-                <h3 style={styles.chartTitle}>Feedback Count per Sentiment (Bar Chart)</h3>
-                <Bar data={sentimentBarData} options={options} />
+                <div style={styles.chartContainer}>
+                    <h3 style={styles.chartTitle}>Feedback Count per Sentiment (Bar Chart)</h3>
+                    <Bar data={sentimentBarData} options={options} />
+                </div>
             </div>
         </div>
     );
@@ -108,10 +110,15 @@ const styles = {
         color: '#333',
         textAlign: 'center',
     },
-    chartContainer: {
+    chartWrapper: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        gap: '30px',
         width: '100%',
-        maxWidth: '600px',
-        margin: '0 auto',
+        flexWrap: 'wrap',
+    },
+    chartContainer: {
+        width: '48%', // Adjust the width to ensure both columns have the same size
         padding: '20px',
         backgroundColor: '#fff',
         borderRadius: '10px',
